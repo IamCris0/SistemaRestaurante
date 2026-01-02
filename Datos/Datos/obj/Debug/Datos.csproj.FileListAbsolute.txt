@@ -1,0 +1,20 @@
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\bin\Debug\Datos.dll.config
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\bin\Debug\Datos.dll
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\bin\Debug\Datos.pdb
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\bin\Debug\Entidades.dll
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\bin\Debug\Entidades.pdb
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\obj\Debug\Datos.dll
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Datos\obj\Debug\Datos.pdb
+C:\PA\PAA\Datos\Datos\bin\Debug\Datos.dll.config
+C:\PA\PAA\Datos\Datos\bin\Debug\Datos.dll
+C:\PA\PAA\Datos\Datos\bin\Debug\Datos.pdb
+C:\PA\PAA\Datos\Datos\bin\Debug\Entidades.dll
+C:\PA\PAA\Datos\Datos\bin\Debug\Entidades.pdb
+C:\PA\PAA\Datos\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\PA\PAA\Datos\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\PA\PAA\Datos\Datos\obj\Debug\Datos.csproj.Up2Date
+C:\PA\PAA\Datos\Datos\obj\Debug\Datos.dll
+C:\PA\PAA\Datos\Datos\obj\Debug\Datos.pdb

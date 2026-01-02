@@ -1,0 +1,11 @@
+C:\PA\PAA\Datos\Logica\bin\Debug\Logica.dll
+C:\PA\PAA\Datos\Logica\bin\Debug\Logica.pdb
+C:\PA\PAA\Datos\Logica\bin\Debug\Datos.dll
+C:\PA\PAA\Datos\Logica\bin\Debug\Entidades.dll
+C:\PA\PAA\Datos\Logica\bin\Debug\Datos.pdb
+C:\PA\PAA\Datos\Logica\bin\Debug\Entidades.pdb
+C:\PA\PAA\Datos\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\PA\PAA\Datos\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\PA\PAA\Datos\Logica\obj\Debug\Logica.csproj.Up2Date
+C:\PA\PAA\Datos\Logica\obj\Debug\Logica.dll
+C:\PA\PAA\Datos\Logica\obj\Debug\Logica.pdb

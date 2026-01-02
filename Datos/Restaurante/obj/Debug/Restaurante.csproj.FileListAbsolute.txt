@@ -1,0 +1,9 @@
+C:\PA\PAA\Datos\Restaurante\bin\Debug\Restaurante.exe.config
+C:\PA\PAA\Datos\Restaurante\bin\Debug\Restaurante.exe
+C:\PA\PAA\Datos\Restaurante\bin\Debug\Restaurante.pdb
+C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.exe
+C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.pdb

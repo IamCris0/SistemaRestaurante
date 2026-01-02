@@ -1,0 +1,12 @@
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Entidades\bin\Debug\Entidades.dll
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Entidades\bin\Debug\Entidades.pdb
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Entidades\obj\Debug\Entidades.dll
+C:\Users\jh_jh\OneDrive\Documentos\4to Semestre\Progamacion Avanzada 2\C# BD\Datos\Entidades\obj\Debug\Entidades.pdb
+C:\PA\PAA\Datos\Entidades\bin\Debug\Entidades.dll
+C:\PA\PAA\Datos\Entidades\bin\Debug\Entidades.pdb
+C:\PA\PAA\Datos\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\PA\PAA\Datos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\PA\PAA\Datos\Entidades\obj\Debug\Entidades.dll
+C:\PA\PAA\Datos\Entidades\obj\Debug\Entidades.pdb

@@ -1,0 +1,13 @@
+C:\PA\PAA\Datos\Presentacion\bin\Debug\Presentacion.dll
+C:\PA\PAA\Datos\Presentacion\bin\Debug\Presentacion.pdb
+C:\PA\PAA\Datos\Presentacion\bin\Debug\Datos.dll
+C:\PA\PAA\Datos\Presentacion\bin\Debug\Entidades.dll
+C:\PA\PAA\Datos\Presentacion\bin\Debug\Logica.dll
+C:\PA\PAA\Datos\Presentacion\bin\Debug\Datos.pdb
+C:\PA\PAA\Datos\Presentacion\bin\Debug\Entidades.pdb
+C:\PA\PAA\Datos\Presentacion\bin\Debug\Logica.pdb
+C:\PA\PAA\Datos\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\PA\PAA\Datos\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\PA\PAA\Datos\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
+C:\PA\PAA\Datos\Presentacion\obj\Debug\Presentacion.dll
+C:\PA\PAA\Datos\Presentacion\obj\Debug\Presentacion.pdb
