@@ -10,3 +10,9 @@ C:\PA\PAA\Datos\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
 C:\PA\PAA\Datos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\PA\PAA\Datos\Entidades\obj\Debug\Entidades.dll
 C:\PA\PAA\Datos\Entidades\obj\Debug\Entidades.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Entidades\bin\Debug\Entidades.dll
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Entidades\bin\Debug\Entidades.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Entidades\obj\Debug\Entidades.dll
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Entidades\obj\Debug\Entidades.pdb

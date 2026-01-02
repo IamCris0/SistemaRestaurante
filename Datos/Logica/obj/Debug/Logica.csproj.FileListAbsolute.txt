@@ -9,3 +9,14 @@ C:\PA\PAA\Datos\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
 C:\PA\PAA\Datos\Logica\obj\Debug\Logica.csproj.Up2Date
 C:\PA\PAA\Datos\Logica\obj\Debug\Logica.dll
 C:\PA\PAA\Datos\Logica\obj\Debug\Logica.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\bin\Debug\Logica.dll
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\bin\Debug\Logica.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\bin\Debug\Datos.dll
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\bin\Debug\Entidades.dll
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\bin\Debug\Datos.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\bin\Debug\Entidades.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\obj\Debug\Logica.csproj.Up2Date
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\obj\Debug\Logica.dll
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Logica\obj\Debug\Logica.pdb
