@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|solutionrelative:datos\\clases\\cargoscd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|solutionrelative:restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\datos\\connectionstringmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|solutionrelative:datos\\connectionstringmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\datos\\connectionstringmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|solutionrelative:datos\\connectionstringmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|solutionrelative:restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\restauranteweb\\restauranteweb\\pages\\cargos\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConnectionStringManager.cs",
-              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\ConnectionStringManager.cs",
-              "RelativeDocumentMoniker": "Datos\\ConnectionStringManager.cs",
-              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\ConnectionStringManager.cs",
-              "RelativeToolTip": "Datos\\ConnectionStringManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T21:40:10.328Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -49,10 +36,22 @@
               "RelativeDocumentMoniker": "Datos\\Clases\\CargosCD.cs",
               "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\Clases\\CargosCD.cs",
               "RelativeToolTip": "Datos\\Clases\\CargosCD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T21:36:05.972Z",
+              "WhenOpened": "2026-01-02T21:42:35.251Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConnectionStringManager.cs",
+              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\ConnectionStringManager.cs",
+              "RelativeDocumentMoniker": "Datos\\ConnectionStringManager.cs",
+              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\ConnectionStringManager.cs",
+              "RelativeToolTip": "Datos\\ConnectionStringManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:40:10.328Z"
             },
             {
               "$type": "Document",
@@ -64,12 +63,11 @@
               "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\Pages\\Cargos\\Index.cshtml.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T21:32:29.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:32:29.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\appsettings.json",
               "RelativeDocumentMoniker": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-02T21:32:08.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:32:08.009Z"
             }
           ]
         }

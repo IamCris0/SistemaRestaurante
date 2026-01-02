@@ -1,8 +1,7 @@
-﻿using Datos.LINQ;
-using Entidades.Clases;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Datos.LINQ;
 
 namespace Datos.Clases
 {
@@ -12,7 +11,6 @@ namespace Datos.Clases
         {
             try
             {
-                // ⭐ Usar la cadena de conexión global
                 string connectionString = ConnectionStringManager.GetConnectionString();
 
                 using (BDRestauranteDataContext dc = new BDRestauranteDataContext(connectionString))
@@ -26,7 +24,7 @@ namespace Datos.Clases
             }
         }
 
-        public static void InsertarCargo(Cargo cargo)
+        public static void InsertarCargo(int idcargo, string nombre, string descripcion)
         {
             try
             {
@@ -34,7 +32,7 @@ namespace Datos.Clases
 
                 using (BDRestauranteDataContext dc = new BDRestauranteDataContext(connectionString))
                 {
-                    dc.CP_InsertarCargo(cargo.Idcargo, cargo.Nombre, cargo.Descripcion);
+                    dc.CP_InsertarCargo(idcargo, nombre, descripcion);
                 }
             }
             catch (Exception ex)
@@ -43,7 +41,7 @@ namespace Datos.Clases
             }
         }
 
-        public static void ActualizarCargo(Cargo cargo)
+        public static void ActualizarCargo(int idcargo, string nombre, string descripcion)
         {
             try
             {
@@ -51,7 +49,7 @@ namespace Datos.Clases
 
                 using (BDRestauranteDataContext dc = new BDRestauranteDataContext(connectionString))
                 {
-                    dc.CP_ModificarCargo(cargo.Idcargo, cargo.Nombre, cargo.Descripcion);
+                    dc.CP_ActualizarCargo(idcargo, nombre, descripcion);
                 }
             }
             catch (Exception ex)

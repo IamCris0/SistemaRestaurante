@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\restauranteweb\\restauranteweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|solutionrelative:restauranteweb\\restauranteweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88D343FD-E110-465A-8E5B-60707307BB04}|Logica\\Logica.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\logica\\clases\\cargoln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88D343FD-E110-465A-8E5B-60707307BB04}|Logica\\Logica.csproj|solutionrelative:logica\\clases\\cargoln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\datos\\clases\\cargoscd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|solutionrelative:datos\\clases\\cargoscd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\datos\\connectionstringmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\datos\\connectionstringmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|solutionrelative:datos\\connectionstringmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,32 +39,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\Program.cs",
+              "RelativeDocumentMoniker": "RestauranteWeb\\RestauranteWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\Program.cs",
+              "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:45:30.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CargoLN.cs",
+              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Logica\\Clases\\CargoLN.cs",
+              "RelativeDocumentMoniker": "Logica\\Clases\\CargoLN.cs",
+              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Logica\\Clases\\CargoLN.cs",
+              "RelativeToolTip": "Logica\\Clases\\CargoLN.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAArwCwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:44:34.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CargosCD.cs",
               "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\Clases\\CargosCD.cs",
               "RelativeDocumentMoniker": "Datos\\Clases\\CargosCD.cs",
               "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\Clases\\CargosCD.cs",
               "RelativeToolTip": "Datos\\Clases\\CargosCD.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T21:42:35.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ConnectionStringManager.cs",
               "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\ConnectionStringManager.cs",
               "RelativeDocumentMoniker": "Datos\\ConnectionStringManager.cs",
               "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\ConnectionStringManager.cs",
               "RelativeToolTip": "Datos\\ConnectionStringManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvyoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T21:40:10.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\Pages\\Cargos\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "RestauranteWeb\\RestauranteWeb\\Pages\\Cargos\\Index.cshtml.cs",
@@ -64,12 +98,11 @@
               "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\Pages\\Cargos\\Index.cshtml.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T21:32:29.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:32:29.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\appsettings.json",
               "RelativeDocumentMoniker": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
@@ -77,8 +110,7 @@
               "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-02T21:32:08.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T21:32:08.009Z"
             }
           ]
         }
