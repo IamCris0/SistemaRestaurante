@@ -54,6 +54,7 @@
     <Compile Include="Clases\PlatoIngredienteCD.cs" />
     <Compile Include="Clases\ReservaCD.cs" />
     <Compile Include="Clases\UsuarioCD.cs" />
+    <Compile Include="ConnectionStringManager.cs" />
     <Compile Include="DatosExcepciones.cs" />
     <Compile Include="LINQ\BDRestaurante.designer.cs">
       <AutoGen>True</AutoGen>

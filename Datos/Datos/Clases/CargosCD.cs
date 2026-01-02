@@ -1,99 +1,79 @@
 ﻿using Datos.LINQ;
+using Entidades.Clases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Cargo = Entidades.Clases.Cargo;
 
 namespace Datos.Clases
 {
     public class CargosCD
     {
-        public static List<CP_ListarCargosFiltroResult> ListarCargoFiltro(string val)
+        public static List<CP_ListarCargosFiltroResult> ListarCargoFiltro(string valor)
         {
-            BDRestauranteDataContext DB = null;
             try
             {
-                using (DB = new BDRestauranteDataContext())
+                // ⭐ Usar la cadena de conexión global
+                string connectionString = ConnectionStringManager.GetConnectionString();
+
+                using (BDRestauranteDataContext dc = new BDRestauranteDataContext(connectionString))
                 {
-                    return DB.CP_ListarCargosFiltro(val).ToList();
+                    return dc.CP_ListarCargosFiltro(valor).ToList();
                 }
             }
             catch (Exception ex)
             {
-                throw new DatosExcepciones("Error al listar el procedimiento Listar cargo", ex);
-            }
-            finally
-            {
-                DB = null;
+                throw new Exception("Error al listar cargos: " + ex.Message, ex);
             }
         }
 
-        public static void InsertarCargo(Cargo oc)
+        public static void InsertarCargo(Cargo cargo)
         {
-
-            BDRestauranteDataContext DB = null;
             try
             {
+                string connectionString = ConnectionStringManager.GetConnectionString();
 
-                using (DB = new BDRestauranteDataContext())
+                using (BDRestauranteDataContext dc = new BDRestauranteDataContext(connectionString))
                 {
-                    DB.CP_InsertarCargo(oc.Idcargo, oc.Nombre, oc.Descripcion);
-                    DB.SubmitChanges();
+                    dc.CP_InsertarCargo(cargo.Idcargo, cargo.Nombre, cargo.Descripcion);
                 }
             }
             catch (Exception ex)
             {
-                throw new DatosExcepciones("Error al insertar tabla cargo", ex);
-            }
-            finally
-            {
-                DB = null;
+                throw new Exception("Error al insertar cargo: " + ex.Message, ex);
             }
         }
-        public static void ModificarCargo(Cargo oc)
-        {
 
-            BDRestauranteDataContext DB = null;
+        public static void ActualizarCargo(Cargo cargo)
+        {
             try
             {
+                string connectionString = ConnectionStringManager.GetConnectionString();
 
-                using (DB = new BDRestauranteDataContext())
+                using (BDRestauranteDataContext dc = new BDRestauranteDataContext(connectionString))
                 {
-                    DB.CP_ModificarCargo(oc.Idcargo, oc.Nombre, oc.Descripcion);
-                    DB.SubmitChanges();
+                    dc.CP_ModificarCargo(cargo.Idcargo, cargo.Nombre, cargo.Descripcion);
                 }
             }
             catch (Exception ex)
             {
-                throw new DatosExcepciones("Error al actualizar tabla cargo", ex);
-            }
-            finally
-            {
-                DB = null;
+                throw new Exception("Error al actualizar cargo: " + ex.Message, ex);
             }
         }
-        public static void EliminarCargo(Cargo oc)
-        {
 
-            BDRestauranteDataContext DB = null;
+        public static void EliminarCargo(int idcargo)
+        {
             try
             {
+                string connectionString = ConnectionStringManager.GetConnectionString();
 
-                using (DB = new BDRestauranteDataContext())
+                using (BDRestauranteDataContext dc = new BDRestauranteDataContext(connectionString))
                 {
-                    DB.CP_EliminarCargo(oc.Idcargo);
-                    DB.SubmitChanges();
+                    dc.CP_EliminarCargo(idcargo);
                 }
             }
             catch (Exception ex)
             {
-                throw new DatosExcepciones("Error al eliminar tabla cargo", ex);
-            }
-            finally
-            {
-                DB = null;
+                throw new Exception("Error al eliminar cargo: " + ex.Message, ex);
             }
         }
     }
