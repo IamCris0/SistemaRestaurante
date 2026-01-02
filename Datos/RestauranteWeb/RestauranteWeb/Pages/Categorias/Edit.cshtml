@@ -1,7 +1,7 @@
 ﻿@page "{id:int}"
-@model RestauranteWeb.Pages.Cargos.EditModel
+@model RestauranteWeb.Pages.Categorias.EditModel
 @{
-    ViewData["Title"] = "Editar Categoria";
+    ViewData["Title"] = "Editar Categoría";
 }
 
 <div class="container mt-4">
@@ -9,7 +9,7 @@
         <div class="col-md-8 offset-md-2">
             <div class="card">
                 <div class="card-header bg-warning">
-                    <h4><i class="bi bi-pencil"></i> Editar Categoria</h4>
+                    <h4><i class="bi bi-pencil"></i> Editar Categoría</h4>
                 </div>
                 <div class="card-body">
                     @if (TempData["Error"] != null)
@@ -21,20 +21,20 @@
 
                     <form method="post">
                         <div class="mb-3">
-                            <label asp-for="Cargo.Idcargo" class="form-label">ID Cargo:</label>
-                            <input asp-for="Cargo.Idcargo" class="form-control" readonly />
+                            <label asp-for="Categoria.Idcategoria" class="form-label">ID Categoría:</label>
+                            <input asp-for="Categoria.Idcategoria" class="form-control" readonly />
                         </div>
 
                         <div class="mb-3">
-                            <label asp-for="Cargo.Nombre" class="form-label">Nombre:</label>
-                            <input asp-for="Cargo.Nombre" class="form-control" maxlength="50" required />
-                            <span asp-validation-for="Cargo.Nombre" class="text-danger"></span>
+                            <label asp-for="Categoria.Nombre" class="form-label">Nombre:</label>
+                            <input asp-for="Categoria.Nombre" class="form-control" maxlength="50" required />
+                            <span asp-validation-for="Categoria.Nombre" class="text-danger"></span>
                         </div>
 
                         <div class="mb-3">
-                            <label asp-for="Cargo.Descripcion" class="form-label">Descripción:</label>
-                            <textarea asp-for="Cargo.Descripcion" class="form-control" rows="3" maxlength="150"></textarea>
-                            <span asp-validation-for="Cargo.Descripcion" class="text-danger"></span>
+                            <label asp-for="Categoria.Descripcion" class="form-label">Descripción:</label>
+                            <textarea asp-for="Categoria.Descripcion" class="form-control" rows="3" maxlength="150"></textarea>
+                            <span asp-validation-for="Categoria.Descripcion" class="text-danger"></span>
                         </div>
 
                         <div class="mt-4">

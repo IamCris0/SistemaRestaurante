@@ -20,8 +20,8 @@ namespace Logica.Clases
                 var auxLista = EmpleadoCD.ListaEmpleadoFiltro(valor);
                 foreach (var obj in auxLista)
                 {
-                    oc = new Empleado(obj.IdCargo, obj.Cedula, obj.Nombres, obj.Apellidos,
-                                      obj.Telefono, obj.Email, obj.Salario, obj.IdCargo);
+                    oc = new Empleado(obj.IdEmpleado, obj.Cedula, obj.Nombres, obj.Apellidos,
+                  obj.Telefono, obj.Email, obj.Salario, obj.IdCargo);
                     lista.Add(oc);
                 }
             }

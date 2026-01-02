@@ -42,3 +42,6 @@ C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\RestauranteWeb\Resta
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\RestauranteWeb\RestauranteWeb\obj\Debug\net8.0\RestauranteWeb.pdb
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\RestauranteWeb\RestauranteWeb\obj\Debug\net8.0\RestauranteWeb.genruntimeconfig.cache
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\RestauranteWeb\RestauranteWeb\obj\Debug\net8.0\ref\RestauranteWeb.dll
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\RestauranteWeb\RestauranteWeb\bin\Debug\net8.0\LINQ\BDRestaurante.designer.cs
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\RestauranteWeb\RestauranteWeb\bin\Debug\net8.0\LINQ\BDRestaurante.dbml
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\RestauranteWeb\RestauranteWeb\bin\Debug\net8.0\LINQ\BDRestaurante.dbml.layout

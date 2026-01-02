@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|solutionrelative:restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\appsettings.json",
-              "RelativeDocumentMoniker": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
-              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\appsettings.json",
-              "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-02T17:16:38.864Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
