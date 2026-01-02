@@ -66,15 +66,15 @@ namespace Datos.LINQ
     partial void InsertUsuario(Usuario instance);
     partial void UpdateUsuario(Usuario instance);
     partial void DeleteUsuario(Usuario instance);
-    #endregion
-		
-		public BDRestauranteDataContext() : 
-				base(global::Datos.Properties.Settings.Default.RestauranteConnectionString1, mappingSource)
-		{
-			OnCreated();
-		}
-		
-		public BDRestauranteDataContext(string connection) : 
+        #endregion
+
+        public BDRestauranteDataContext() :
+           base(global::System.Configuration.ConfigurationManager.ConnectionStrings["RestauranteConnectionString"].ConnectionString, mappingSource)
+        {
+            OnCreated();
+        }
+
+        public BDRestauranteDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
