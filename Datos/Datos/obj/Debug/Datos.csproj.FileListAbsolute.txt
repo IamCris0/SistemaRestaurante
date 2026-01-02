@@ -22,11 +22,11 @@ C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\Dato
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\Datos.dll
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\Datos.pdb
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\Entidades.dll
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\Entidades.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Datos.csproj.Up2Date
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Datos.dll
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Datos.pdb
-C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
-C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\System.Configuration.ConfigurationManager.xml

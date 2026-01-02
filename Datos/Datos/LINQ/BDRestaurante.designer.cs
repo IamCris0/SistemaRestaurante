@@ -69,7 +69,7 @@ namespace Datos.LINQ
         #endregion
 
         public BDRestauranteDataContext() :
-           base(global::System.Configuration.ConfigurationManager.ConnectionStrings["RestauranteConnectionString"].ConnectionString, mappingSource)
+   base(@"Data Source=CRIS;Initial Catalog=Restaurante;Integrated Security=True;TrustServerCertificate=True", mappingSource)
         {
             OnCreated();
         }

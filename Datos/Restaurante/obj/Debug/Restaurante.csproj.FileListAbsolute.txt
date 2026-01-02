@@ -7,3 +7,12 @@ C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
 C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
 C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.exe
 C:\PA\PAA\Datos\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Restaurante\obj\Debug\Restaurante.pdb

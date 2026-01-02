@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lS3K3RZSZtNylseFW5EtEvyO8ysnHFBG8+FK03H2oYo=",
+  "Hash": "5gCjilfrrFh3o4dX3OnKsKkLHQIhz3SwqUOSJo5UOK4=",
   "Source": "RestauranteWeb",
   "BasePath": "_content/RestauranteWeb",
   "Mode": "Default",
@@ -6263,7 +6263,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Jan 2026 02:43:43 GMT"
+          "Value": "Fri, 02 Jan 2026 22:17:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6300,7 +6300,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Jan 2026 02:43:43 GMT"
+          "Value": "Fri, 02 Jan 2026 22:17:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6345,7 +6345,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Jan 2026 02:43:43 GMT"
+          "Value": "Fri, 02 Jan 2026 22:17:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6390,7 +6390,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 Jan 2026 02:43:43 GMT"
+          "Value": "Fri, 02 Jan 2026 22:17:02 GMT"
         },
         {
           "Name": "Cache-Control",
