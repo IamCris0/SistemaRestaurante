@@ -1,0 +1,62 @@
+@model RestauranteMVC.Models.Cargo
+
+@{
+    ViewData["Title"] = "Detalles del Cargo";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h2 class="mb-0">
+                        <i class="bi bi-eye"></i> Detalles del Cargo
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">ID:</dt>
+                        <dd class="col-sm-9">@Model.IdCargo</dd>
+
+                        <dt class="col-sm-3">Nombre:</dt>
+                        <dd class="col-sm-9"><strong>@Model.Nombre</strong></dd>
+
+                        <dt class="col-sm-3">Descripción:</dt>
+                        <dd class="col-sm-9">@Model.Descripcion</dd>
+
+                        <dt class="col-sm-3">Empleados:</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge bg-info">
+                                @(Model.Empleados?.Count ?? 0) empleado(s)
+                            </span>
+                        </dd>
+                    </dl>
+
+                    @if (Model.Empleados != null && Model.Empleados.Any())
+                    {
+                        <hr />
+                        <h4>Empleados con este cargo:</h4>
+                        <ul class="list-group">
+                            @foreach (var empleado in Model.Empleados)
+                            {
+                                <li class="list-group-item">
+                                    <i class="bi bi-person"></i> 
+                                    @empleado.Nombres @empleado.Apellidos - @empleado.Email
+                                </li>
+                            }
+                        </ul>
+                    }
+
+                    <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-action="Edit" asp-route-id="@Model.IdCargo" class="btn btn-warning">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Volver al Listado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

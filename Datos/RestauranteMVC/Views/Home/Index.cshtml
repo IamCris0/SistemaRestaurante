@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido al Sistema de Gestión del Restaurante</h1>
+    <p class="lead">Administra tu restaurante de manera eficiente con ASP.NET Core MVC y Entity Framework</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card text-center shadow">
+            <div class="card-body">
+                <i class="bi bi-people" style="font-size: 3rem; color: #0d6efd;"></i>
+                <h5 class="card-title mt-3">Gestión de Personal</h5>
+                <p class="card-text">Administra empleados, cargos y roles</p>
+                <a asp-controller="Empleados" asp-action="Index" class="btn btn-primary">
+                    Ver Empleados
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card text-center shadow">
+            <div class="card-body">
+                <i class="bi bi-egg-fried" style="font-size: 3rem; color: #fd7e14;"></i>
+                <h5 class="card-title mt-3">Menú y Platos</h5>
+                <p class="card-text">Gestiona el menú y categorías</p>
+                <a asp-controller="Platos" asp-action="Index" class="btn btn-warning">
+                    Ver Menú
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card text-center shadow">
+            <div class="card-body">
+                <i class="bi bi-receipt" style="font-size: 3rem; color: #198754;"></i>
+                <h5 class="card-title mt-3">Pedidos y Ventas</h5>
+                <p class="card-text">Registra pedidos y reservaciones</p>
+                <a asp-controller="Pedidos" asp-action="Index" class="btn btn-success">
+                    Ver Pedidos
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="bi bi-info-circle"></i> Características del Sistema
+                </h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="bi bi-check-circle text-success"></i> CRUD completo para todas las entidades
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-check-circle text-success"></i> Entity Framework Core con SQL Server
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-check-circle text-success"></i> Diseño responsive con Bootstrap 5
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-check-circle text-success"></i> Validaciones del lado cliente y servidor
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <i class="bi bi-link-45deg"></i> Accesos Rápidos
+                </h5>
+                <div class="d-grid gap-2">
+                    <a asp-controller="Cargos" asp-action="Index" class="btn btn-outline-primary">
+                        <i class="bi bi-briefcase"></i> Gestionar Cargos
+                    </a>
+                    <a asp-controller="Categorias" asp-action="Index" class="btn btn-outline-primary">
+                        <i class="bi bi-tags"></i> Gestionar Categorías
+                    </a>
+                    <a asp-controller="Clientes" asp-action="Index" class="btn btn-outline-primary">
+                        <i class="bi bi-person-badge"></i> Gestionar Clientes
+                    </a>
+                    <a asp-controller="Mesas" asp-action="Index" class="btn btn-outline-primary">
+                        <i class="bi bi-table"></i> Gestionar Mesas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

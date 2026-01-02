@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurante", "Restaurante\Restaurante.csproj", "{5A816B33-F840-41CE-8521-D7389980F4E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteWeb", "RestauranteWeb\RestauranteWeb\RestauranteWeb.csproj", "{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestauranteMVC", "RestauranteMVC\RestauranteMVC.csproj", "{B52711E5-0954-4362-A378-8A496F734ED5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{5A816B33-F840-41CE-8521-D7389980F4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A816B33-F840-41CE-8521-D7389980F4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A816B33-F840-41CE-8521-D7389980F4E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B52711E5-0954-4362-A378-8A496F734ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52711E5-0954-4362-A378-8A496F734ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52711E5-0954-4362-A378-8A496F734ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52711E5-0954-4362-A378-8A496F734ED5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,105 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{88D343FD-E110-465A-8E5B-60707307BB04}|Logica\\Logica.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\logica\\clases\\mesaln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88D343FD-E110-465A-8E5B-60707307BB04}|Logica\\Logica.csproj|solutionrelative:logica\\clases\\mesaln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88D343FD-E110-465A-8E5B-60707307BB04}|Logica\\Logica.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\logica\\clases\\clienteln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88D343FD-E110-465A-8E5B-60707307BB04}|Logica\\Logica.csproj|solutionrelative:logica\\clases\\clienteln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\datos\\linq\\bdrestaurante.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|solutionrelative:datos\\linq\\bdrestaurante.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|solutionrelative:restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\datos\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{63866DC4-74A5-4D57-9B77-F1DD3C74996E}|Datos\\Datos.csproj|solutionrelative:datos\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MesaLN.cs",
-              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Logica\\Clases\\MesaLN.cs",
-              "RelativeDocumentMoniker": "Logica\\Clases\\MesaLN.cs",
-              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Logica\\Clases\\MesaLN.cs",
-              "RelativeToolTip": "Logica\\Clases\\MesaLN.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T22:15:53.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClienteLN.cs",
-              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Logica\\Clases\\ClienteLN.cs",
-              "RelativeDocumentMoniker": "Logica\\Clases\\ClienteLN.cs",
-              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Logica\\Clases\\ClienteLN.cs",
-              "RelativeToolTip": "Logica\\Clases\\ClienteLN.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwAAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T22:15:50.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\appsettings.json",
-              "RelativeDocumentMoniker": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
-              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\appsettings.json",
-              "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-02T22:13:52.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "app.config",
-              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\app.config",
-              "RelativeDocumentMoniker": "Datos\\app.config",
-              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\app.config",
-              "RelativeToolTip": "Datos\\app.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-01-02T22:06:30.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BDRestaurante.designer.cs",
-              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\LINQ\\BDRestaurante.designer.cs",
-              "RelativeDocumentMoniker": "Datos\\LINQ\\BDRestaurante.designer.cs",
-              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\Datos\\LINQ\\BDRestaurante.designer.cs",
-              "RelativeToolTip": "Datos\\LINQ\\BDRestaurante.designer.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAqwB0AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T22:05:00.475Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
