@@ -20,8 +20,52 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Cargos/Component.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZ29zXENvbXBvbmVudC5yYXpvcg==
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Cargos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZ29zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Cargos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZ29zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Cargos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZ29zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Cargos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZ29zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Categorias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Categorias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Categorias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Categorias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Clientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Clientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteWeb/RestauranteWeb/Pages/Error.cshtml]

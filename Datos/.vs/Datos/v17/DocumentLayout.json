@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\restauranteweb\\restauranteweb\\pages\\cargos\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|solutionrelative:restauranteweb\\restauranteweb\\pages\\cargos\\component.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|c:\\users\\gcris\\desktop\\proyecto-pa\\sistemarestaurante\\datos\\restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B2BEC5A-E83F-E0F4-344C-11D8325EF87F}|RestauranteWeb\\RestauranteWeb\\RestauranteWeb.csproj|solutionrelative:restauranteweb\\restauranteweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Component.razor",
-              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\Pages\\Cargos\\Component.razor",
-              "RelativeDocumentMoniker": "RestauranteWeb\\RestauranteWeb\\Pages\\Cargos\\Component.razor",
-              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\Pages\\Cargos\\Component.razor",
-              "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\Pages\\Cargos\\Component.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T05:11:14.693Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\gcris\\Desktop\\Proyecto-PA\\SistemaRestaurante\\Datos\\RestauranteWeb\\RestauranteWeb\\appsettings.json",
+              "RelativeToolTip": "RestauranteWeb\\RestauranteWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-02T17:16:38.864Z",
               "EditorCaption": ""
             }
           ]

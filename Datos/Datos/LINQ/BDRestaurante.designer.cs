@@ -194,6 +194,13 @@ namespace Datos.LINQ
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarCategoria")]
+		public int CP_InsertarCategoria([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCategoria", DbType="Int")] System.Nullable<int> idCategoria, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(150)")] string descripcion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCategoria, nombre, descripcion);
+			return ((int)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarCargo")]
 		public int CP_EliminarCargo([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
 		{
@@ -215,15 +222,15 @@ namespace Datos.LINQ
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarEmpleado")]
-		public int CP_EliminarEmpleado([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarIngrediente")]
+		public int CP_EliminarIngrediente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ide);
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarIngrediente")]
-		public int CP_EliminarIngrediente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarEmpleado")]
+		public int CP_EliminarEmpleado([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ide);
 			return ((int)(result.ReturnValue));
@@ -236,13 +243,6 @@ namespace Datos.LINQ
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarPedido")]
-		public int CP_EliminarPedido([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ide);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarPedidoPlato")]
 		public int CP_EliminarPedidoPlato([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
 		{
@@ -250,8 +250,22 @@ namespace Datos.LINQ
 			return ((int)(result.ReturnValue));
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarPedido")]
+		public int CP_EliminarPedido([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ide);
+			return ((int)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarPlato")]
 		public int CP_EliminarPlato([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ide);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarPlatoIngrediente")]
+		public int CP_EliminarPlatoIngrediente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Ide", DbType="Int")] System.Nullable<int> ide)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), ide);
 			return ((int)(result.ReturnValue));
@@ -268,13 +282,6 @@ namespace Datos.LINQ
 		public int CP_InsertarCargo([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCargo", DbType="Int")] System.Nullable<int> idCargo, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(150)")] string descripcion)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCargo, nombre, descripcion);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarCategoria")]
-		public int CP_InsertarCategoria([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCategoria", DbType="Int")] System.Nullable<int> idCategoria, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(150)")] string descripcion)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCategoria, nombre, descripcion);
 			return ((int)(result.ReturnValue));
 		}
 		
@@ -299,17 +306,17 @@ namespace Datos.LINQ
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarMesa")]
-		public int CP_InsertarMesa([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdMesa", DbType="Int")] System.Nullable<int> idMesa, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Numero", DbType="Int")] System.Nullable<int> numero, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Capacidad", DbType="Int")] System.Nullable<int> capacidad, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Estado", DbType="VarChar(20)")] string estado)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idMesa, numero, capacidad, estado);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarPedido")]
 		public int CP_InsertarPedido([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPedido", DbType="Int")] System.Nullable<int> idPedido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Fecha", DbType="DateTime")] System.Nullable<System.DateTime> fecha, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Total", DbType="Decimal(10,2)")] System.Nullable<decimal> total, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Estado", DbType="VarChar(20)")] string estado, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCliente", DbType="Int")] System.Nullable<int> idCliente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdEmpleado", DbType="Int")] System.Nullable<int> idEmpleado)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPedido, fecha, total, estado, idCliente, idEmpleado);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarMesa")]
+		public int CP_InsertarMesa([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdMesa", DbType="Int")] System.Nullable<int> idMesa, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Numero", DbType="Int")] System.Nullable<int> numero, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Capacidad", DbType="Int")] System.Nullable<int> capacidad, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Estado", DbType="VarChar(20)")] string estado)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idMesa, numero, capacidad, estado);
 			return ((int)(result.ReturnValue));
 		}
 		
@@ -324,6 +331,20 @@ namespace Datos.LINQ
 		public int CP_InsertarPlato([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlato", DbType="Int")] System.Nullable<int> idPlato, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(150)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Precio", DbType="Decimal(10,2)")] System.Nullable<decimal> precio, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Stock", DbType="Int")] System.Nullable<int> stock, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCategoria", DbType="Int")] System.Nullable<int> idCategoria)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPlato, nombre, descripcion, precio, stock, idCategoria);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarPlatoIngrediente")]
+		public int CP_InsertarPlatoIngrediente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlatoIngrediente", DbType="Int")] System.Nullable<int> idPlatoIngrediente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlato", DbType="Int")] System.Nullable<int> idPlato, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdIngrediente", DbType="Int")] System.Nullable<int> idIngrediente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cantidad", DbType="Decimal(10,2)")] System.Nullable<decimal> cantidad)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPlatoIngrediente, idPlato, idIngrediente, cantidad);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarUsuario")]
+		public int CP_InsertarUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasenia", DbType="VarChar(50)")] string contrasenia)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), email, contrasenia);
 			return ((int)(result.ReturnValue));
 		}
 		
@@ -355,11 +376,11 @@ namespace Datos.LINQ
 			return ((ISingleResult<CP_ListarCliente_FiltroResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ListarEmpleado_Filtro")]
-		public ISingleResult<CP_ListarEmpleado_FiltroResult> CP_ListarEmpleado_Filtro([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Valor", DbType="VarChar(50)")] string valor)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ListarMesa_Filtro")]
+		public ISingleResult<CP_ListarMesa_FiltroResult> CP_ListarMesa_Filtro([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Valor", DbType="VarChar(50)")] string valor)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), valor);
-			return ((ISingleResult<CP_ListarEmpleado_FiltroResult>)(result.ReturnValue));
+			return ((ISingleResult<CP_ListarMesa_FiltroResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ListarIngrediente_Filtro")]
@@ -369,11 +390,11 @@ namespace Datos.LINQ
 			return ((ISingleResult<CP_ListarIngrediente_FiltroResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ListarMesa_Filtro")]
-		public ISingleResult<CP_ListarMesa_FiltroResult> CP_ListarMesa_Filtro([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Valor", DbType="VarChar(50)")] string valor)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ListarEmpleado_Filtro")]
+		public ISingleResult<CP_ListarEmpleado_FiltroResult> CP_ListarEmpleado_Filtro([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Valor", DbType="VarChar(50)")] string valor)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), valor);
-			return ((ISingleResult<CP_ListarMesa_FiltroResult>)(result.ReturnValue));
+			return ((ISingleResult<CP_ListarEmpleado_FiltroResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ListarPedido_Filtro")]
@@ -418,17 +439,17 @@ namespace Datos.LINQ
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ModificarCategoria")]
-		public int CP_ModificarCategoria([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCategoria", DbType="Int")] System.Nullable<int> idCategoria, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(150)")] string descripcion)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCategoria, nombre, descripcion);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ModificarCliente")]
 		public int CP_ModificarCliente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCliente", DbType="Int")] System.Nullable<int> idCliente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cedula", DbType="VarChar(10)")] string cedula, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombres", DbType="VarChar(50)")] string nombres, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Apellidos", DbType="VarChar(50)")] string apellidos, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Telefono", DbType="VarChar(15)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Direccion", DbType="VarChar(150)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(100)")] string email)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCliente, cedula, nombres, apellidos, telefono, direccion, email);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ModificarCategoria")]
+		public int CP_ModificarCategoria([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCategoria", DbType="Int")] System.Nullable<int> idCategoria, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Descripcion", DbType="VarChar(150)")] string descripcion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idCategoria, nombre, descripcion);
 			return ((int)(result.ReturnValue));
 		}
 		
@@ -474,6 +495,13 @@ namespace Datos.LINQ
 			return ((int)(result.ReturnValue));
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ModificarPlatoIngrediente")]
+		public int CP_ModificarPlatoIngrediente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlatoIngrediente", DbType="Int")] System.Nullable<int> idPlatoIngrediente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlato", DbType="Int")] System.Nullable<int> idPlato, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdIngrediente", DbType="Int")] System.Nullable<int> idIngrediente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cantidad", DbType="Decimal(10,2)")] System.Nullable<decimal> cantidad)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPlatoIngrediente, idPlato, idIngrediente, cantidad);
+			return ((int)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ModificarReserva")]
 		public int CP_ModificarReserva([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdReserva", DbType="Int")] System.Nullable<int> idReserva, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="FechaHora", DbType="DateTime")] System.Nullable<System.DateTime> fechaHora, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdCliente", DbType="Int")] System.Nullable<int> idCliente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdMesa", DbType="Int")] System.Nullable<int> idMesa, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlato", DbType="Int")] System.Nullable<int> idPlato)
 		{
@@ -486,34 +514,6 @@ namespace Datos.LINQ
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), email, contrasena);
 			return ((ISingleResult<CP_VerificarUsuarioResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarPlatoIngrediente")]
-		public int CP_InsertarPlatoIngrediente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlatoIngrediente", DbType="Int")] System.Nullable<int> idPlatoIngrediente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlato", DbType="Int")] System.Nullable<int> idPlato, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdIngrediente", DbType="Int")] System.Nullable<int> idIngrediente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cantidad", DbType="Decimal(18,0)")] System.Nullable<decimal> cantidad)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPlatoIngrediente, idPlato, idIngrediente, cantidad);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_ModificarPlatoIngrediente")]
-		public int CP_ModificarPlatoIngrediente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlatoIngrediente", DbType="Int")] System.Nullable<int> idPlatoIngrediente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlato", DbType="Int")] System.Nullable<int> idPlato, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdIngrediente", DbType="Int")] System.Nullable<int> idIngrediente, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cantidad", DbType="Decimal(18,0)")] System.Nullable<decimal> cantidad)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPlatoIngrediente, idPlato, idIngrediente, cantidad);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_EliminarPlatoIngrediente")]
-		public int CP_EliminarPlatoIngrediente([global::System.Data.Linq.Mapping.ParameterAttribute(Name="IdPlatoIngrediente", DbType="Int")] System.Nullable<int> idPlatoIngrediente)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPlatoIngrediente);
-			return ((int)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.CP_InsertarUsuario")]
-		public int CP_InsertarUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Email", DbType="VarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Contrasenia", DbType="VarChar(50)")] string contrasenia)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), email, contrasenia);
-			return ((int)(result.ReturnValue));
 		}
 	}
 	
@@ -3382,6 +3382,166 @@ namespace Datos.LINQ
 		}
 	}
 	
+	public partial class CP_ListarMesa_FiltroResult
+	{
+		
+		private int _IdMesa;
+		
+		private int _Numero;
+		
+		private int _Capacidad;
+		
+		private string _Estado;
+		
+		public CP_ListarMesa_FiltroResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdMesa", DbType="Int NOT NULL")]
+		public int IdMesa
+		{
+			get
+			{
+				return this._IdMesa;
+			}
+			set
+			{
+				if ((this._IdMesa != value))
+				{
+					this._IdMesa = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Numero", DbType="Int NOT NULL")]
+		public int Numero
+		{
+			get
+			{
+				return this._Numero;
+			}
+			set
+			{
+				if ((this._Numero != value))
+				{
+					this._Numero = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capacidad", DbType="Int NOT NULL")]
+		public int Capacidad
+		{
+			get
+			{
+				return this._Capacidad;
+			}
+			set
+			{
+				if ((this._Capacidad != value))
+				{
+					this._Capacidad = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estado", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string Estado
+		{
+			get
+			{
+				return this._Estado;
+			}
+			set
+			{
+				if ((this._Estado != value))
+				{
+					this._Estado = value;
+				}
+			}
+		}
+	}
+	
+	public partial class CP_ListarIngrediente_FiltroResult
+	{
+		
+		private int _IdIngrediente;
+		
+		private string _Nombre;
+		
+		private decimal _Cantidad;
+		
+		private string _UnidadMedida;
+		
+		public CP_ListarIngrediente_FiltroResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdIngrediente", DbType="Int NOT NULL")]
+		public int IdIngrediente
+		{
+			get
+			{
+				return this._IdIngrediente;
+			}
+			set
+			{
+				if ((this._IdIngrediente != value))
+				{
+					this._IdIngrediente = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Nombre
+		{
+			get
+			{
+				return this._Nombre;
+			}
+			set
+			{
+				if ((this._Nombre != value))
+				{
+					this._Nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Decimal(10,2) NOT NULL")]
+		public decimal Cantidad
+		{
+			get
+			{
+				return this._Cantidad;
+			}
+			set
+			{
+				if ((this._Cantidad != value))
+				{
+					this._Cantidad = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UnidadMedida", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string UnidadMedida
+		{
+			get
+			{
+				return this._UnidadMedida;
+			}
+			set
+			{
+				if ((this._UnidadMedida != value))
+				{
+					this._UnidadMedida = value;
+				}
+			}
+		}
+	}
+	
 	public partial class CP_ListarEmpleado_FiltroResult
 	{
 		
@@ -3547,166 +3707,6 @@ namespace Datos.LINQ
 				if ((this._Cargo != value))
 				{
 					this._Cargo = value;
-				}
-			}
-		}
-	}
-	
-	public partial class CP_ListarIngrediente_FiltroResult
-	{
-		
-		private int _IdIngrediente;
-		
-		private string _Nombre;
-		
-		private decimal _Cantidad;
-		
-		private string _UnidadMedida;
-		
-		public CP_ListarIngrediente_FiltroResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdIngrediente", DbType="Int NOT NULL")]
-		public int IdIngrediente
-		{
-			get
-			{
-				return this._IdIngrediente;
-			}
-			set
-			{
-				if ((this._IdIngrediente != value))
-				{
-					this._IdIngrediente = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string Nombre
-		{
-			get
-			{
-				return this._Nombre;
-			}
-			set
-			{
-				if ((this._Nombre != value))
-				{
-					this._Nombre = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Decimal(10,2) NOT NULL")]
-		public decimal Cantidad
-		{
-			get
-			{
-				return this._Cantidad;
-			}
-			set
-			{
-				if ((this._Cantidad != value))
-				{
-					this._Cantidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UnidadMedida", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string UnidadMedida
-		{
-			get
-			{
-				return this._UnidadMedida;
-			}
-			set
-			{
-				if ((this._UnidadMedida != value))
-				{
-					this._UnidadMedida = value;
-				}
-			}
-		}
-	}
-	
-	public partial class CP_ListarMesa_FiltroResult
-	{
-		
-		private int _IdMesa;
-		
-		private int _Numero;
-		
-		private int _Capacidad;
-		
-		private string _Estado;
-		
-		public CP_ListarMesa_FiltroResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdMesa", DbType="Int NOT NULL")]
-		public int IdMesa
-		{
-			get
-			{
-				return this._IdMesa;
-			}
-			set
-			{
-				if ((this._IdMesa != value))
-				{
-					this._IdMesa = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Numero", DbType="Int NOT NULL")]
-		public int Numero
-		{
-			get
-			{
-				return this._Numero;
-			}
-			set
-			{
-				if ((this._Numero != value))
-				{
-					this._Numero = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Capacidad", DbType="Int NOT NULL")]
-		public int Capacidad
-		{
-			get
-			{
-				return this._Capacidad;
-			}
-			set
-			{
-				if ((this._Capacidad != value))
-				{
-					this._Capacidad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estado", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string Estado
-		{
-			get
-			{
-				return this._Estado;
-			}
-			set
-			{
-				if ((this._Estado != value))
-				{
-					this._Estado = value;
 				}
 			}
 		}
