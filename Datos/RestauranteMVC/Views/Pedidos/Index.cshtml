@@ -1,0 +1,77 @@
+@model IEnumerable<RestauranteMVC.Models.Pedido>
+
+@{
+    ViewData["Title"] = "Pedidos";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">
+        <i class="bi bi-receipt"></i> Gestión de Pedidos
+    </h1>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            <i class="bi bi-check-circle"></i> @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Nuevo Pedido
+        </a>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <th>Empleado</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                        <th class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pedido in Model)
+                    {
+                        <tr>
+                            <td>@pedido.IdPedido</td>
+                            <td>@pedido.Fecha.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@pedido.Cliente?.Nombres @pedido.Cliente?.Apellidos</td>
+                            <td>@pedido.Empleado?.Nombres @pedido.Empleado?.Apellidos</td>
+                            <td><strong class="text-success">$@pedido.Total.ToString("F2")</strong></td>
+                            <td>
+                                <span class="badge
+                                    @(pedido.Estado == "Completado" ? "bg-success" :
+                                      pedido.Estado == "En Proceso" ? "bg-warning" :
+                                      pedido.Estado == "Pendiente" ? "bg-info" : "bg-danger")">
+                                    @pedido.Estado
+                                </span>
+                            </td>
+                            <td class="text-center">
+                                <a asp-action="Details" asp-route-id="@pedido.IdPedido"
+                                   class="btn btn-sm btn-info" title="Ver Detalles">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@pedido.IdPedido"
+                                   class="btn btn-sm btn-warning" title="Editar">
+                                    <i class="bi bi-pencil"></i>
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@pedido.IdPedido"
+                                   class="btn btn-sm btn-danger" title="Eliminar">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

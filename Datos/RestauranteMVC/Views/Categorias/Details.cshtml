@@ -1,0 +1,67 @@
+@model RestauranteMVC.Models.Categoria
+
+@{
+    ViewData["Title"] = "Detalles de la Categoría";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h2 class="mb-0">
+                        <i class="bi bi-eye"></i> Detalles de la Categoría
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">ID:</dt>
+                        <dd class="col-sm-9">@Model.IdCategoria</dd>
+
+                        <dt class="col-sm-3">Nombre:</dt>
+                        <dd class="col-sm-9"><strong>@Model.Nombre</strong></dd>
+
+                        <dt class="col-sm-3">Descripción:</dt>
+                        <dd class="col-sm-9">@Model.Descripcion</dd>
+
+                        <dt class="col-sm-3">Platos:</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge bg-success">
+                                @(Model.Platos?.Count ?? 0) plato(s)
+                            </span>
+                        </dd>
+                    </dl>
+
+                    @if (Model.Platos != null && Model.Platos.Any())
+                    {
+                        <hr />
+                        <h4>Platos en esta categoría:</h4>
+                        <ul class="list-group">
+                            @foreach (var plato in Model.Platos)
+                            {
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <i class="bi bi-egg-fried"></i> @plato.Nombre
+                                        <small class="text-muted">- @plato.Descripcion</small>
+                                    </span>
+                                    <span class="badge bg-primary rounded-pill">
+                                        $@plato.Precio.ToString("F2")
+                                    </span>
+                                </li>
+                            }
+                        </ul>
+                    }
+
+                    <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-action="Edit" asp-route-id="@Model.IdCategoria" class="btn btn-warning">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Volver al Listado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

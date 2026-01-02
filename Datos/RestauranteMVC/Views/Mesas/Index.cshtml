@@ -1,0 +1,85 @@
+@model IEnumerable<RestauranteMVC.Models.Mesa>
+
+@{
+    ViewData["Title"] = "Mesas";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">
+        <i class="bi bi-table"></i> Gestión de Mesas
+    </h1>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            <i class="bi bi-check-circle"></i> @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show">
+            <i class="bi bi-exclamation-triangle"></i> @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus-circle"></i> Nueva Mesa
+        </a>
+    </div>
+
+    <div class="row">
+        @foreach (var mesa in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm @(mesa.Estado == "Disponible" ? "border-success" : "border-danger")">
+                    <div class="card-header @(mesa.Estado == "Disponible" ? "bg-success" : "bg-danger") text-white">
+                        <h4 class="mb-0">
+                            <i class="bi bi-table"></i> Mesa #@mesa.Numero
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row mb-0">
+                            <dt class="col-6">Capacidad:</dt>
+                            <dd class="col-6">
+                                <span class="badge bg-primary">@mesa.Capacidad personas</span>
+                            </dd>
+
+                            <dt class="col-6">Estado:</dt>
+                            <dd class="col-6">
+                                <span class="badge @(mesa.Estado == "Disponible" ? "bg-success" : "bg-danger")">
+                                    @mesa.Estado
+                                </span>
+                            </dd>
+
+                            <dt class="col-6">Reservas:</dt>
+                            <dd class="col-6">
+                                <span class="badge bg-info">@(mesa.Reservas?.Count ?? 0)</span>
+                            </dd>
+                        </dl>
+
+                        <div class="d-grid gap-2 mt-3">
+                            <div class="btn-group" role="group">
+                                <a asp-action="Details" asp-route-id="@mesa.IdMesa"
+                                   class="btn btn-sm btn-info">
+                                    <i class="bi bi-eye"></i> Ver
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@mesa.IdMesa"
+                                   class="btn btn-sm btn-warning">
+                                    <i class="bi bi-pencil"></i> Editar
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@mesa.IdMesa"
+                                   class="btn btn-sm btn-danger">
+                                    <i class="bi bi-trash"></i> Eliminar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
