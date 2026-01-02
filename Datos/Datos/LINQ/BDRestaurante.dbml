@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Restaurante" Class="BDRestauranteDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=Restaurante;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="RestauranteConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CRIS;Initial Catalog=Restaurante;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="Datos.Properties.Settings" SettingsPropertyName="RestauranteConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Cargos" Member="Cargos">
     <Type Name="Cargos">
       <Column Name="IdCargo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -128,12 +128,6 @@
       <Column Name="Contraseña" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Function Name="dbo.CP_InsertarCategoria" Method="CP_InsertarCategoria">
-    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(150)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.CP_EliminarCargo" Method="CP_EliminarCargo">
     <Parameter Name="Ide" Parameter="ide" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
@@ -146,11 +140,15 @@
     <Parameter Name="Ide" Parameter="ide" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.CP_EliminarIngrediente" Method="CP_EliminarIngrediente">
+  <Function Name="dbo.CP_EliminarEmpleado" Method="CP_EliminarEmpleado">
     <Parameter Name="Ide" Parameter="ide" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.CP_EliminarEmpleado" Method="CP_EliminarEmpleado">
+  <Function Name="dbo.CP_EliminarPedido" Method="CP_EliminarPedido">
+    <Parameter Name="Ide" Parameter="ide" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_EliminarIngrediente" Method="CP_EliminarIngrediente">
     <Parameter Name="Ide" Parameter="ide" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
@@ -159,10 +157,6 @@
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.CP_EliminarPedidoPlato" Method="CP_EliminarPedidoPlato">
-    <Parameter Name="Ide" Parameter="ide" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_EliminarPedido" Method="CP_EliminarPedido">
     <Parameter Name="Ide" Parameter="ide" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
@@ -176,6 +170,12 @@
   </Function>
   <Function Name="dbo.CP_EliminarReserva" Method="CP_EliminarReserva">
     <Parameter Name="Ide" Parameter="ide" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_InsertarCategoria" Method="CP_InsertarCategoria">
+    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(150)" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.CP_InsertarCargo" Method="CP_InsertarCargo">
@@ -212,6 +212,13 @@
     <Parameter Name="UnidadMedida" Parameter="unidadMedida" Type="System.String" DbType="VarChar(20)" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.CP_InsertarMesa" Method="CP_InsertarMesa">
+    <Parameter Name="IdMesa" Parameter="idMesa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Numero" Parameter="numero" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Capacidad" Parameter="capacidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Estado" Parameter="estado" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
   <Function Name="dbo.CP_InsertarPedido" Method="CP_InsertarPedido">
     <Parameter Name="IdPedido" Parameter="idPedido" Type="System.Int32" DbType="Int" />
     <Parameter Name="Fecha" Parameter="fecha" Type="System.DateTime" DbType="DateTime" />
@@ -219,13 +226,6 @@
     <Parameter Name="Estado" Parameter="estado" Type="System.String" DbType="VarChar(20)" />
     <Parameter Name="IdCliente" Parameter="idCliente" Type="System.Int32" DbType="Int" />
     <Parameter Name="IdEmpleado" Parameter="idEmpleado" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_InsertarMesa" Method="CP_InsertarMesa">
-    <Parameter Name="IdMesa" Parameter="idMesa" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Numero" Parameter="numero" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Capacidad" Parameter="capacidad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Estado" Parameter="estado" Type="System.String" DbType="VarChar(20)" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.CP_InsertarPedidoPlato" Method="CP_InsertarPedidoPlato">
@@ -252,17 +252,17 @@
     <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Decimal" DbType="Decimal(10,2)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.CP_InsertarUsuario" Method="CP_InsertarUsuario">
-    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Contrasenia" Parameter="contrasenia" Type="System.String" DbType="VarChar(50)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.CP_InsertarReserva" Method="CP_InsertarReserva">
     <Parameter Name="IdReserva" Parameter="idReserva" Type="System.Int32" DbType="Int" />
     <Parameter Name="FechaHora" Parameter="fechaHora" Type="System.DateTime" DbType="DateTime" />
     <Parameter Name="IdCliente" Parameter="idCliente" Type="System.Int32" DbType="Int" />
     <Parameter Name="IdMesa" Parameter="idMesa" Type="System.Int32" DbType="Int" />
     <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_InsertarUsuario" Method="CP_InsertarUsuario">
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Contrasenia" Parameter="contrasenia" Type="System.String" DbType="VarChar(50)" />
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.CP_ListarCargosFiltro" Method="CP_ListarCargosFiltro">
@@ -291,6 +291,161 @@
       <Column Name="Telefono" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="Direccion" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
       <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_VerificarUsuario" Method="CP_VerificarUsuario">
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="VarChar(255)" />
+    <ElementType Name="CP_VerificarUsuarioResult">
+      <Column Name="Resultado" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ModificarReserva" Method="CP_ModificarReserva">
+    <Parameter Name="IdReserva" Parameter="idReserva" Type="System.Int32" DbType="Int" />
+    <Parameter Name="FechaHora" Parameter="fechaHora" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IdCliente" Parameter="idCliente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdMesa" Parameter="idMesa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarPlatoIngrediente" Method="CP_ModificarPlatoIngrediente">
+    <Parameter Name="IdPlatoIngrediente" Parameter="idPlatoIngrediente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdIngrediente" Parameter="idIngrediente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarPlato" Method="CP_ModificarPlato">
+    <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="Precio" Parameter="precio" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="Stock" Parameter="stock" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarPedidoPlato" Method="CP_ModificarPedidoPlato">
+    <Parameter Name="IdPedidoPlato" Parameter="idPedidoPlato" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPedido" Parameter="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Subtotal" Parameter="subtotal" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarPedido" Method="CP_ModificarPedido">
+    <Parameter Name="IdPedido" Parameter="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Fecha" Parameter="fecha" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="Total" Parameter="total" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="Estado" Parameter="estado" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IdCliente" Parameter="idCliente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IdEmpleado" Parameter="idEmpleado" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarMesa" Method="CP_ModificarMesa">
+    <Parameter Name="IdMesa" Parameter="idMesa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Numero" Parameter="numero" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Capacidad" Parameter="capacidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Estado" Parameter="estado" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarIngrediente" Method="CP_ModificarIngrediente">
+    <Parameter Name="IdIngrediente" Parameter="idIngrediente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="UnidadMedida" Parameter="unidadMedida" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarEmpleado" Method="CP_ModificarEmpleado">
+    <Parameter Name="IdEmpleado" Parameter="idEmpleado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Cedula" Parameter="cedula" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Nombres" Parameter="nombres" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Apellidos" Parameter="apellidos" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Telefono" Parameter="telefono" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Salario" Parameter="salario" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="IdCargo" Parameter="idCargo" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarCategoria" Method="CP_ModificarCategoria">
+    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(150)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarCliente" Method="CP_ModificarCliente">
+    <Parameter Name="IdCliente" Parameter="idCliente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Cedula" Parameter="cedula" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="Nombres" Parameter="nombres" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Apellidos" Parameter="apellidos" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Telefono" Parameter="telefono" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ModificarCargo" Method="CP_ModificarCargo">
+    <Parameter Name="IdCargo" Parameter="idCargo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(150)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CP_ListarReserva_Filtro" Method="CP_ListarReserva_Filtro">
+    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="CP_ListarReserva_FiltroResult">
+      <Column Name="IdReserva" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaHora" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMesa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cliente" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Mesa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Plato" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ListarPlatoIngrediente_Filtro" Method="CP_ListarPlatoIngrediente_Filtro">
+    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="CP_ListarPlatoIngrediente_FiltroResult">
+      <Column Name="IdPlatoIngrediente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdIngrediente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Plato" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ingrediente" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ListarPlato_Filtro" Method="CP_ListarPlato_Filtro">
+    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="CP_ListarPlato_FiltroResult">
+      <Column Name="IdPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Descripcion" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Precio" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Stock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ListarPedidoPlato_Filtro" Method="CP_ListarPedidoPlato_Filtro">
+    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="CP_ListarPedidoPlato_FiltroResult">
+      <Column Name="IdPedidoPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Subtotal" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Plato" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CP_ListarPedido_Filtro" Method="CP_ListarPedido_Filtro">
+    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="CP_ListarPedido_FiltroResult">
+      <Column Name="IdPedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Estado" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdEmpleado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cliente" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Empleado" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
   <Function Name="dbo.CP_ListarMesa_Filtro" Method="CP_ListarMesa_Filtro">
@@ -323,161 +478,6 @@
       <Column Name="Salario" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
       <Column Name="IdCargo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Cargo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.CP_ListarPedido_Filtro" Method="CP_ListarPedido_Filtro">
-    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="CP_ListarPedido_FiltroResult">
-      <Column Name="IdPedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="Total" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Estado" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdEmpleado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Cliente" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Empleado" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.CP_ListarPedidoPlato_Filtro" Method="CP_ListarPedidoPlato_Filtro">
-    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="CP_ListarPedidoPlato_FiltroResult">
-      <Column Name="IdPedidoPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdPedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Subtotal" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Plato" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.CP_ListarPlato_Filtro" Method="CP_ListarPlato_Filtro">
-    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="CP_ListarPlato_FiltroResult">
-      <Column Name="IdPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Descripcion" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-      <Column Name="Precio" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Stock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdCategoria" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Categoria" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.CP_ListarPlatoIngrediente_Filtro" Method="CP_ListarPlatoIngrediente_Filtro">
-    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="CP_ListarPlatoIngrediente_FiltroResult">
-      <Column Name="IdPlatoIngrediente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdIngrediente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Cantidad" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
-      <Column Name="Plato" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Ingrediente" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.CP_ListarReserva_Filtro" Method="CP_ListarReserva_Filtro">
-    <Parameter Name="Valor" Parameter="valor" Type="System.String" DbType="VarChar(50)" />
-    <ElementType Name="CP_ListarReserva_FiltroResult">
-      <Column Name="IdReserva" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FechaHora" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Column Name="IdCliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdMesa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="IdPlato" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Cliente" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Mesa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Plato" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.CP_ModificarCargo" Method="CP_ModificarCargo">
-    <Parameter Name="IdCargo" Parameter="idCargo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(150)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarCliente" Method="CP_ModificarCliente">
-    <Parameter Name="IdCliente" Parameter="idCliente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Cedula" Parameter="cedula" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="Nombres" Parameter="nombres" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Apellidos" Parameter="apellidos" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Telefono" Parameter="telefono" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="VarChar(150)" />
-    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarCategoria" Method="CP_ModificarCategoria">
-    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(150)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarEmpleado" Method="CP_ModificarEmpleado">
-    <Parameter Name="IdEmpleado" Parameter="idEmpleado" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Cedula" Parameter="cedula" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="Nombres" Parameter="nombres" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Apellidos" Parameter="apellidos" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Telefono" Parameter="telefono" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Salario" Parameter="salario" Type="System.Decimal" DbType="Decimal(10,2)" />
-    <Parameter Name="IdCargo" Parameter="idCargo" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarIngrediente" Method="CP_ModificarIngrediente">
-    <Parameter Name="IdIngrediente" Parameter="idIngrediente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Decimal" DbType="Decimal(10,2)" />
-    <Parameter Name="UnidadMedida" Parameter="unidadMedida" Type="System.String" DbType="VarChar(20)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarMesa" Method="CP_ModificarMesa">
-    <Parameter Name="IdMesa" Parameter="idMesa" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Numero" Parameter="numero" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Capacidad" Parameter="capacidad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Estado" Parameter="estado" Type="System.String" DbType="VarChar(20)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarPedido" Method="CP_ModificarPedido">
-    <Parameter Name="IdPedido" Parameter="idPedido" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Fecha" Parameter="fecha" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="Total" Parameter="total" Type="System.Decimal" DbType="Decimal(10,2)" />
-    <Parameter Name="Estado" Parameter="estado" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="IdCliente" Parameter="idCliente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IdEmpleado" Parameter="idEmpleado" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarPlato" Method="CP_ModificarPlato">
-    <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="Descripcion" Parameter="descripcion" Type="System.String" DbType="VarChar(150)" />
-    <Parameter Name="Precio" Parameter="precio" Type="System.Decimal" DbType="Decimal(10,2)" />
-    <Parameter Name="Stock" Parameter="stock" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IdCategoria" Parameter="idCategoria" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarPedidoPlato" Method="CP_ModificarPedidoPlato">
-    <Parameter Name="IdPedidoPlato" Parameter="idPedidoPlato" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IdPedido" Parameter="idPedido" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Subtotal" Parameter="subtotal" Type="System.Decimal" DbType="Decimal(10,2)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarPlatoIngrediente" Method="CP_ModificarPlatoIngrediente">
-    <Parameter Name="IdPlatoIngrediente" Parameter="idPlatoIngrediente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IdIngrediente" Parameter="idIngrediente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Cantidad" Parameter="cantidad" Type="System.Decimal" DbType="Decimal(10,2)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_ModificarReserva" Method="CP_ModificarReserva">
-    <Parameter Name="IdReserva" Parameter="idReserva" Type="System.Int32" DbType="Int" />
-    <Parameter Name="FechaHora" Parameter="fechaHora" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="IdCliente" Parameter="idCliente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IdMesa" Parameter="idMesa" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IdPlato" Parameter="idPlato" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.CP_VerificarUsuario" Method="CP_VerificarUsuario">
-    <Parameter Name="Email" Parameter="email" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="Contrasena" Parameter="contrasena" Type="System.String" DbType="VarChar(255)" />
-    <ElementType Name="CP_VerificarUsuarioResult">
-      <Column Name="Resultado" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>

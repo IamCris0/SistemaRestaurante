@@ -26,11 +26,22 @@ namespace Datos.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Restaurante;Integrated Security=True;TrustServerCer" +
-            "tificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CRIS;Initial Catalog=Restaurante;Integrated Security=True;TrustServer" +
+            "Certificate=True")]
         public string RestauranteConnectionString {
             get {
                 return ((string)(this["RestauranteConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CRIS;Initial Catalog=Restaurante;Integrated Security=True;Encrypt=Tru" +
+            "e;TrustServerCertificate=True")]
+        public string RestauranteConnectionString1 {
+            get {
+                return ((string)(this["RestauranteConnectionString1"]));
             }
         }
     }

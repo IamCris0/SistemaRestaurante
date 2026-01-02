@@ -28,6 +28,3 @@ C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Dato
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Datos.csproj.Up2Date
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Datos.dll
 C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\obj\Debug\Datos.pdb
-C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\LINQ\BDRestaurante.designer.cs
-C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\LINQ\BDRestaurante.dbml
-C:\Users\gcris\Desktop\Proyecto-PA\SistemaRestaurante\Datos\Datos\bin\Debug\LINQ\BDRestaurante.dbml.layout
