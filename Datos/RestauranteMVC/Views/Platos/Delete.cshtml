@@ -1,0 +1,63 @@
+@model RestauranteMVC.Models.Plato
+
+@{
+    ViewData["Title"] = "Eliminar Plato";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h2 class="mb-0">
+                        <i class="bi bi-trash"></i> Eliminar Plato
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <strong>¿Está seguro que desea eliminar este plato?</strong>
+                    </div>
+
+                    <dl class="row">
+                        <dt class="col-sm-3">ID:</dt>
+                        <dd class="col-sm-9">@Model.IdPlato</dd>
+
+                        <dt class="col-sm-3">Nombre:</dt>
+                        <dd class="col-sm-9"><strong>@Model.Nombre</strong></dd>
+
+                        <dt class="col-sm-3">Descripción:</dt>
+                        <dd class="col-sm-9">@Model.Descripcion</dd>
+
+                        <dt class="col-sm-3">Categoría:</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge bg-info">@Model.Categoria?.Nombre</span>
+                        </dd>
+
+                        <dt class="col-sm-3">Precio:</dt>
+                        <dd class="col-sm-9"><strong class="text-success">$@Model.Precio.ToString("F2")</strong></dd>
+
+                        <dt class="col-sm-3">Stock:</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge @(Model.Stock > 10 ? "bg-success" : Model.Stock > 0 ? "bg-warning" : "bg-danger")">
+                                @Model.Stock unidades
+                            </span>
+                        </dd>
+                    </dl>
+
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="IdPlato" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i> Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

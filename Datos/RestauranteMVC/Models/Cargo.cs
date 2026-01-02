@@ -7,6 +7,7 @@ namespace RestauranteMVC.Models
     public class Cargo
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Display(Name = "ID Cargo")]
         public int IdCargo { get; set; }
 
@@ -19,7 +20,6 @@ namespace RestauranteMVC.Models
         [Display(Name = "Descripción")]
         public string? Descripcion { get; set; }
 
-        // Relación con Empleados
         public virtual ICollection<Empleado>? Empleados { get; set; }
     }
 }

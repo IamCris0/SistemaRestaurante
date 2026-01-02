@@ -1,0 +1,54 @@
+@model RestauranteMVC.Models.Reserva
+
+@{
+    ViewData["Title"] = "Detalles de la Reserva";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h2 class="mb-0">
+                        <i class="bi bi-eye"></i> Detalles de la Reserva
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">ID:</dt>
+                        <dd class="col-sm-9"><strong>#@Model.IdReserva</strong></dd>
+
+                        <dt class="col-sm-3">Fecha y Hora:</dt>
+                        <dd class="col-sm-9">
+                            <strong>@Model.FechaHora.ToString("dd/MM/yyyy HH:mm")</strong>
+                        </dd>
+
+                        <dt class="col-sm-3">Cliente:</dt>
+                        <dd class="col-sm-9">@Model.Cliente?.Nombres @Model.Cliente?.Apellidos</dd>
+
+                        <dt class="col-sm-3">Mesa:</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge bg-info">Mesa @Model.Mesa?.Numero (Capacidad: @Model.Mesa?.Capacidad personas)</span>
+                        </dd>
+
+                        <dt class="col-sm-3">Plato:</dt>
+                        <dd class="col-sm-9">
+                            <strong>@Model.Plato?.Nombre</strong>
+                            <br />
+                            <small class="text-muted">@Model.Plato?.Descripcion</small>
+                        </dd>
+                    </dl>
+
+                    <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-action="Edit" asp-route-id="@Model.IdReserva" class="btn btn-warning">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Volver al Listado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

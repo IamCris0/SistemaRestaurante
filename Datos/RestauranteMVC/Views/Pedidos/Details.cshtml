@@ -1,0 +1,80 @@
+@model RestauranteMVC.Models.Pedido
+
+@{
+    ViewData["Title"] = "Detalles del Pedido";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h2 class="mb-0">
+                        <i class="bi bi-eye"></i> Detalles del Pedido
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">ID Pedido:</dt>
+                        <dd class="col-sm-9"><strong>#@Model.IdPedido</strong></dd>
+
+                        <dt class="col-sm-3">Fecha:</dt>
+                        <dd class="col-sm-9">@Model.Fecha.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                        <dt class="col-sm-3">Cliente:</dt>
+                        <dd class="col-sm-9">@Model.Cliente?.Nombres @Model.Cliente?.Apellidos</dd>
+
+                        <dt class="col-sm-3">Empleado:</dt>
+                        <dd class="col-sm-9">@Model.Empleado?.Nombres @Model.Empleado?.Apellidos</dd>
+
+                        <dt class="col-sm-3">Estado:</dt>
+                        <dd class="col-sm-9">
+                            <span class="badge @(Model.Estado == "Completado" ? "bg-success" :
+                                      Model.Estado == "En Proceso" ? "bg-warning" :
+                                      Model.Estado == "Pendiente" ? "bg-info" : "bg-danger")">
+                                @Model.Estado
+                            </span>
+                        </dd>
+
+                        <dt class="col-sm-3">Total:</dt>
+                        <dd class="col-sm-9"><strong class="text-success fs-4">$@Model.Total.ToString("F2")</strong></dd>
+                    </dl>
+
+                    @if (Model.PedidoPlatos != null && Model.PedidoPlatos.Any())
+                    {
+                        <hr />
+                        <h5>Detalle de Platos:</h5>
+                        <table class="table table-sm">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Plato</th>
+                                    <th class="text-center">Cantidad</th>
+                                    <th class="text-end">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var detalle in Model.PedidoPlatos)
+                                {
+                                    <tr>
+                                        <td>@detalle.Plato?.Nombre</td>
+                                        <td class="text-center">@detalle.Cantidad</td>
+                                        <td class="text-end">$@detalle.Subtotal.ToString("F2")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+
+                    <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a asp-action="Edit" asp-route-id="@Model.IdPedido" class="btn btn-warning">
+                            <i class="bi bi-pencil"></i> Editar
+                        </a>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Volver al Listado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
