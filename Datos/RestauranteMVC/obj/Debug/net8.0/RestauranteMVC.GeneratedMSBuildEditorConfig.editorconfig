@@ -92,6 +92,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteMVC/Views/Empleados/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteMVC/Views/Empleados/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteMVC/Views/Empleados/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -110,6 +118,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteMVC/Views/Mesas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteMVC/Views/Mesas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteMVC/Views/Mesas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteMVC/Views/Mesas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gcris/Desktop/Proyecto-PA/SistemaRestaurante/Datos/RestauranteMVC/Views/Mesas/Index.cshtml]

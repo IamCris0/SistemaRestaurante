@@ -17,6 +17,12 @@
                     <form asp-action="Create" method="post">
                         <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
+                        <div class="mb-3">
+                            <label asp-for="IdMesa" class="form-label"></label>
+                            <input asp-for="IdMesa" class="form-control" />
+                            <span asp-validation-for="IdMesa" class="text-danger"></span>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label asp-for="Numero" class="form-label"></label>

@@ -1,0 +1,48 @@
+@model RestauranteMVC.Models.Mesa
+
+@{
+    ViewData["Title"] = "Eliminar Mesa";
+}
+
+<div class="container mt-4">
+    <div class="card shadow border-danger">
+        <div class="card-header bg-danger text-white">
+            <h2><i class="bi bi-trash"></i> Eliminar Mesa</h2>
+        </div>
+        <div class="card-body">
+
+            <div class="alert alert-warning">
+                ¿Desea eliminar esta mesa?
+            </div>
+
+            <dl class="row">
+                <dt class="col-sm-4">Número:</dt>
+                <dd class="col-sm-8">@Model.Numero</dd>
+
+                <dt class="col-sm-4">Capacidad:</dt>
+                <dd class="col-sm-8">@Model.Capacidad</dd>
+
+                <dt class="col-sm-4">Estado:</dt>
+                <dd class="col-sm-8">@Model.Estado</dd>
+
+                <dt class="col-sm-4">Reservas:</dt>
+                <dd class="col-sm-8">
+                    @(Model.Reservas?.Count ?? 0)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete" method="post">
+                <input type="hidden" asp-for="IdMesa" />
+
+                <div class="text-end">
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                    <button class="btn btn-danger"
+                    @((Model.Reservas?.Count ?? 0) > 0 ? "disabled" : "")>
+                        Eliminar
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

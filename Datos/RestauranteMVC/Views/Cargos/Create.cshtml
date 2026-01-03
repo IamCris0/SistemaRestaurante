@@ -18,6 +18,12 @@
                         <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
                         <div class="mb-3">
+                            <label asp-for="IdCargo" class="form-label"></label>
+                            <input asp-for="IdCargo" class="form-control" />
+                            <span asp-validation-for="IdCargo" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
                             <label asp-for="Nombre" class="form-label"></label>
                             <input asp-for="Nombre" class="form-control" placeholder="Ej: Mesero, Chef, Gerente" />
                             <span asp-validation-for="Nombre" class="text-danger"></span>
